@@ -150,13 +150,13 @@ angular
       },
       controller: 'AddtocalendarCtrl',
       template: '\
-      <div class="btn-group" dropdown on-toggle="toggled(open)">\
+      <div class="btn-group" uib-dropdown on-toggle="toggled(open)">\
 	      <span\
-	      	ng-class="className || \'btn btn-sm btn-default dropdown-toggle\'"\
-	      	dropdown-toggle>\
+	      	ng-class="className || \'btn btn-sm btn-default uib-dropdown-toggle\'"\
+	      	uib-dropdown-toggle>\
 	      	{{btnText || \'Add to calendar\'}} <span class="caret"></span>\
 	      </span>\
-	      <ul class="dropdown-menu">\
+	      <ul class="uib-dropdown-menu">\
 		      <li><a ng-click="calendarUrl.dlIcal()">iCalendar</a></li>\
 		      <li><a href="{{calendarUrl.google}}" target="_blank">Google Calendar</a></li>\
 		      <li><a ng-click="calendarUrl.dlIcal()">Outlook</a></li>\
